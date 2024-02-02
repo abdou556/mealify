@@ -1,0 +1,220 @@
+@media screen and (min-width:1400px) {
+    .contanier {
+        max-width: 1320px;
+
+    }
+}
+
+@media screen and (max-width:1400px) {
+    .contanier {
+        max-width: 1140px;
+
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .contanier {
+        max-width: 960px;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .contanier {
+        max-width: 720px;
+
+    }
+}
+
+@media screen and (max-width:768px) {
+    .contanier {
+        max-width: 540px;
+
+    }
+}
+
+@media screen and (max-width:576px) {
+    .contanier {
+        padding-inline: 15px;
+
+    }
+}
+
+/* nav */
+@media screen and (max-width:1200px) {
+    .meun-icon {
+
+        display: block;
+    }
+
+    nav ul {
+        /* display: none; */
+        transform: translateX(100%);
+        position: absolute;
+        background-color: #fff;
+        flex-direction: column;
+        width: 350px;
+        top: 0;
+        right: 0;
+        height: 100%;
+        padding-inline: 10px;
+        gap: 0;
+    }
+
+    nav ul li {
+        padding-block: 20px;
+    }
+
+    nav ul li.close-icon {
+        display: block;
+    }
+
+    nav div.mode {
+        margin-left: auto;
+        margin-right: 20px;
+    }
+}
+
+/* header section  */
+@media screen and (min-width: 1200px) {
+    header {
+        min-height: 100vh;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    header .contanier {
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    header .contanier>* {
+        width: 100%;
+        text-align: center;
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header .contanier .header-content {
+        margin-top: 30px;
+    }
+
+    header .btn-main {
+        --border-radius: 100vh;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    header .buttons-group {
+
+        flex-direction: column;
+    }
+}
+
+/* chefs */
+@media screen and (max-width: 992px) {
+
+    .chefs-cards .card {
+        width: calc(calc(100% - var(--gap)) / 2);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .chefs-cards .card {
+        width: 100%;
+    }
+}
+
+/* gallery  */
+@media screen and (max-width: 1400px) {
+    .gallery-imgs {
+        height: 1025px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .gallery-imgs {
+        height: 860px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .gallery-imgs {
+        height: 1400px;
+    }
+
+    .gallery-imgs picture {
+        width: calc(calc(100% - var(--gap)) / 2);
+    }
+
+     .pizza {
+        order: 1;
+    }
+
+     .fried {
+        order: 6;
+    }
+     .omelette {
+        order: 4;
+    }
+
+    .kofta {
+        order: 7;
+    }
+
+    .burger {
+        order: 2;
+    }
+
+     .pizza-slice {
+        order: 3;
+    }
+     .steak {
+        order: 5;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .gallery-imgs {
+        height: auto;
+        
+    }
+    .gallery-imgs picture {
+        width: 100%;
+    }
+}
+
+/* contact  */
+@media screen and (max-width: 992px) {
+   
+    .contact .input-group input {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .contact .contact-means>div{
+        width: 100%;
+    }
+}
+
+/* footer  */
+@media screen and (max-width: 1200px) {
+    footer :is(.about, .contact-details) {
+        width: calc(calc(100% - var(--gap) * 2) / 2);
+        order: 1;
+    }
+    footer :is(.subscription) {
+        width: 100%;
+        order: 2;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    footer :is(.about, .contact-details , .subscription) {
+        width: 100%;
+        order: 0;
+    }
+    
+}
